@@ -22,7 +22,7 @@ Add default parameters to `config.yml`:
 twig:
     form:
         resources:
-            - 'TPRedactorBundle:Form:redactor_widget.html.twig'
+            - 'SolutionCodeMirrorBundle:Form:code_mirror_widget.html.twig'
 
 solution_code_mirror:
     parameters:
@@ -31,6 +31,8 @@ solution_code_mirror:
       lineWrapping: true
     mode_dirs:
       - @SolutionCodeMirrorBundle/Resources/public/js/mode
+    themes_dirs:
+      - @SolutionCodeMirrorBundle/Resources/public/css/theme
 ```
 
 
